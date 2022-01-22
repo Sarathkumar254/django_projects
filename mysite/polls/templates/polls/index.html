@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Conversions</h1>
+
+<p>The select element is used to create a drop-down list.</p>
+
+<form action="convert", method="post">
+{% csrf_token %}
+  <label for="convert">Choose the input type of variable:</label>
+  <select name="convert" id="convert">
+    <option value="binary">binary</option>
+    <option value="decimal">decimal</option>
+    <option value="hex">hex</option>
+    <option value="octal">octal</option>
+  </select><br><br>
+  <a>Please enter your input value: <input type="text", name="num1"></a>
+  <br><br>
+  <label for="convert1">Choose the output type of variable:</label>
+  <select name="convert1" id="convert1">
+    <option value="binary">binary</option>
+    <option value="decimal">decimal</option>
+    <option value="hex">hex</option>
+    <option value="octal">octal</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click Submit button to Convert the variables.</p>
+
+</body>
+</html>
