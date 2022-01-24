@@ -1,7 +1,10 @@
 ### django documentation link
 https://docs.djangoproject.com/en/3.2/
 ### installation steps
-1. 
+1. pip install Django
+2. set up your virtual environment and install the dependencies
+3. python manage.py runserver
+4. Copy and paste the local host URL in the browser to get the beleow page
 
 
 
